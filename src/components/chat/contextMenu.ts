@@ -1297,8 +1297,8 @@ export default class ChatContextMenu {
     const parts: string[] = await Promise.all(messages.map(formatter));
 
     return {
-      text: parts.filter(Boolean).join('\n'),
-      html: htmlParts.filter(Boolean).join('\n')
+      text: parts.filter(Boolean).join('\n\n'),
+      html: htmlParts.filter(Boolean).join('\n\n')
     };
   }
 
